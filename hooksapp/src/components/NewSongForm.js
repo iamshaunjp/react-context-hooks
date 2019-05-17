@@ -2,8 +2,6 @@ import React, { useState } from 'react';
 
 const NewSongForm = ({ addSong }) => {
   const [title, setTitle] = useState('');
-  // useState can be used multiple times for different data
-  const [artist, setArtist] = useState('');
   const handleSubmit = (e) => {
     e.preventDefault();
     addSong(title);
